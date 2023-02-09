@@ -1,0 +1,89 @@
+
+a {
+  color: #000 !important;
+  text-decoration: none
+}
+
+body {
+    position: relative;
+    width: 1900px;
+    height: 900px;
+    background: rgba(0, 0, 0, 0.90);
+}
+
+.header {
+    position: absolute;
+    width: 255px;
+    height: 74px;
+    left: 863px;
+    top: 79px;
+
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.ava {
+    position: absolute;
+    width: 203px;
+    height: 203px;
+    left: 29px;
+    top: 15px;
+}
+
+.wars {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 1750px;
+    top: 48px;
+}
+
+.git {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 1646px;
+    top: 48px;
+}
+
+.main_img {
+    position: absolute;
+    width: 1550px;
+    height: 670px;
+    left: 232px;
+    top: 218px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.text {
+    position: absolute;
+    width: 1543px;
+    height: 230px;
+    left: 231px;
+    top: 425px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #FFFFFF;
+}
+
+.db {
+    position: absolute;
+    width: 246px;
+    height: 74px;
+    left: 855px;
+    top: 953px;
+
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
