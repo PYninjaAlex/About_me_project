@@ -1,10 +1,27 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
+    <link rel="stylesheet" href={% static "styles/database.css" %}>
     <meta charset="UTF-8">
+    <link rel="icon" href={% static "/favicons/favicon%20(1).ico" %} type="image/x-icon">
     <title>Database</title>
 </head>
 <body>
-    <h1 style="text-align: center; font-style: italic">NotImplemented</h1>
+    <div id="content">
+      <table cellspacing="0">
+		<tr>
+			<th>Name</th>
+			<th>Second name</th>
+			<th>Age</th>
+		</tr>
+        {% for name in terms_list %}
+		<tr>
+			<td>{{ name.name }}</td>
+			<td>{{ name.second_name }}</td>
+			<td>{{ name.age }}</td>
+		</tr>
+        {% endfor %}
+    </table>
+</div>
 </body>
 </html>

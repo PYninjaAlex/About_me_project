@@ -25,6 +25,20 @@ body {
     line-height: 74px;
 }
 
+.admin {
+    position: absolute;
+    width: 255px;
+    height: 74px;
+    left: 1870px;
+    top: 79px;
+
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
 .ava {
     position: absolute;
     width: 203px;

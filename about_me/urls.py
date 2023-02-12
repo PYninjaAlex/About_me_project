@@ -3,5 +3,5 @@ from .views import *
 
 urlpatterns = [
     path('', main),
-    path('database/', database)
+    path('database/', DatabaseRealisation.as_view())
 ]

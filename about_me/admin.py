@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import AboutMeDatabase
 
-# Register your models here.
+
+@admin.register(AboutMeDatabase)
+class Database(admin.ModelAdmin):
+    list_display = ("name", "second_name", "age")
