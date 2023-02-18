@@ -7,21 +7,36 @@
     <title>Database</title>
 </head>
 <body>
-    <div id="content">
-      <table cellspacing="0">
-		<tr>
-			<th>Name</th>
-			<th>Second name</th>
-			<th>Age</th>
-		</tr>
+<div id="content">
+    <table cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Second name</th>
+            <th>Age</th>
+        </tr>
         {% for name in terms_list %}
-		<tr>
-			<td>{{ name.name }}</td>
-			<td>{{ name.second_name }}</td>
-			<td>{{ name.age }}</td>
-		</tr>
+            <tr>
+                <td>{{ name.name }}</td>
+                <td>{{ name.second_name }}</td>
+                <td>{{ name.age }}</td>
+            </tr>
         {% endfor %}
     </table>
+</div>
+<div class="form">
+    <form action="add_users" method="post">
+            {% csrf_token %}
+
+            <label>Name</label>
+            <input type="text" name="name" required maxlength="15"> <br>
+
+            <label>Second name</label>
+            <input type="text" name="second_name" required maxlength="15"> <br>
+
+            <label>Age</label>
+            <input type="number" name="age" required> <br>
+            <input type="submit" value="Login">
+    </form>
 </div>
 </body>
 </html>
