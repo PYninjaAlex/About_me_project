@@ -1,7 +1,10 @@
+html {
+    zoom: 90%;
+}
 
 a {
-  color: #000 !important;
-  text-decoration: none
+    color: #000 !important;
+    text-decoration: none
 }
 
 body {

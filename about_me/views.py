@@ -32,6 +32,11 @@ class AddUsers(View):
 
     @staticmethod
     def post(request):
+        """
+        Db updating func().
+        :param request:
+        :return:
+        """
         terms = AboutMeDatabase.objects.all()
         form = LoginForm(request.POST)
         if form.is_valid():
