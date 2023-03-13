@@ -1,6 +1,7 @@
 {% load static %}
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href={% static "/favicons/favicon%20(1).ico" %} type="image/x-icon">
     <link rel="icon" href={% static "/favicons/favicon%20(1).ico" %} type="image/x-icon">
     <link rel="stylesheet" href={% static "/styles/main.css"%}>
@@ -8,9 +9,9 @@
     <title>About me</title>
 </head>
 <body>
-    <img src={% static "/images/Ellipse%201.png" %} alt="Avatar" class="ava" w>
-    <a target="_blank" href="https://www.codewars.com/users/PYninjaAlex" ><img alt="Codewars" class="wars" src={% static "/images/Ellipse%203.png" %}></a>
-    <a target="_blank" href="https://github.com/PYninjaAlex"><img alt="Github" class="git" src={% static "/images/Ellipse%202.png" %}></a>
+    <img src={% static "/images/Ellipse%201.png" %} alt="Avatar" class="ava">
+    <a target="_blank" href="https://www.codewars.com/users/PYninjaAlex"><img alt="Codewars" class="wars animate__animated animate__backInDown" src={% static "/images/Ellipse%203.png" %}></a>
+    <a target="_blank" href="https://github.com/PYninjaAlex"><img alt="Github" class="git animate__animated animate__backInUp" src={% static "/images/Ellipse%202.png" %}></a>
     <span class="header">About me</span>
     <a href="admin"><span class="admin">Admin</span></a>
     <div class="main">
