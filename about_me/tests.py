@@ -7,5 +7,5 @@ class ViewsTests(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_database(self):
-        response = self.client.get("/database")
+        response = self.client.get("/database/")
         self.assertEqual(response.status_code, 200)
