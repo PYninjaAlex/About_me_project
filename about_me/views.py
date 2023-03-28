@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.views.generic.base import View
 from .models import AboutMeDatabase
 from .form import LoginForm
@@ -40,6 +41,5 @@ class AddUsers(View):
         terms = AboutMeDatabase.objects.all()
         form = LoginForm(request.POST)
         if form.is_valid():
-            form = form.save(commit=False)
             form.save()
-        return render(request, 'database.html', {"terms_list": terms})
+        return redirect("../database")
