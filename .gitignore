@@ -2,8 +2,3 @@
 .idea
 # Editor-based HTTP Client requests
 # Datasource local storage ignored files
-node_modules
-db.sqlite3
-package.json
-package-lock.json
-venv
